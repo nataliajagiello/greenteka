@@ -1,8 +1,13 @@
 import React from "react";
 import { plants } from "./data/plantsData";
+
 import epipremnumImg from "./assets/epipremnum.jpg";
 import monsteraImg from "./assets/monstera.jpg";
 import sansevieriaImg from "./assets/sansewieria.jpg";
+import krotonImg from "./assets/kroton.jpg";
+import aloesImg from "./assets/aloes.jpg";
+import hibiskusImg from "./assets/hibiskus.jpg";
+
 import PlantCard from "./components/PlantCard";
 import { Flower, Flower2, Leaf, Sprout, TreePine } from "lucide-react";
 import "./App.css";
@@ -13,8 +18,14 @@ const getPicture = (plantName: string): string => {
       return epipremnumImg;
     case "Monstera":
       return monsteraImg;
+    case "Kroton":
+      return krotonImg;
     case "Sansewieria":
       return sansevieriaImg;
+    case "Aloes":
+      return aloesImg;
+    case "Hibiskus":
+      return hibiskusImg;
     default:
       return epipremnumImg;
   }

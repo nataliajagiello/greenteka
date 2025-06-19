@@ -47,4 +47,40 @@ export const plants: Plant[] = [
     temperature: "18-24°C",
     image: "../assets/epipremnum.jpg",
   },
+  {
+  id: 4,
+  name: "Aloes",
+  scientificName: "Aloe vera",
+  description:
+    "Sukulent o mięsistych liściach zawierających żel o właściwościach leczniczych. Bardzo łatwy w uprawie i odporny na suszę.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Raz na 2-3 tygodnie, gdy ziemia całkowicie przeschnie",
+  lightRequirement: "Pełne słońce lub jasne światło",
+  temperature: "18-27°C",
+  image: "../assets/aloes.jpg", // upewnij się, że obraz istnieje
+},
+{
+  id: 5,
+  name: "Kroton",
+  scientificName: "Codiaeum variegatum",
+  description:
+    "Roślina ozdobna o kolorowych, wzorzystych liściach. Potrzebuje wilgotności i stałych warunków, ale zachwyca intensywnymi barwami.",
+  difficulty: "Średnia",
+  wateringFrequency: "Utrzymuj lekko wilgotną ziemię, nie przesuszaj",
+  lightRequirement: "Jasne, rozproszone światło (im więcej, tym intensywniejsze kolory)",
+  temperature: "18-26°C",
+  image: "../assets/kroton.jpg",
+},
+{
+  id: 6,
+  name: "Hibiskus",
+  scientificName: "Hibiscus rosa-sinensis",
+  description:
+    "Efektowna roślina kwitnąca z dużymi kwiatami. Lubi ciepło i wilgoć. Idealna na słoneczne parapety lub tarasy.",
+  difficulty: "Średnia",
+  wateringFrequency: "Regularnie, utrzymuj wilgotne podłoże",
+  lightRequirement: "Dużo światła słonecznego",
+  temperature: "20-30°C",
+  image: "../assets/hibiskus.jpg",
+}
 ];
