@@ -166,6 +166,64 @@ export const plants: Plant[] = [
   lightRequirement: "Jasne miejsce, najlepiej z rozproszonym światłem",
   temperature: "18-25°C",
   image: "../assets/ficusbenjamin.jpg",
-}
-
-];
+},
+{
+  id: 14,
+  name: "Bluszcz",
+  scientificName: "Hedera helix",
+  description:
+    "Pnącze o dekoracyjnych liściach, świetne do wiszących doniczek. Lubi chłód i umiarkowane podlewanie.",
+  difficulty: "Średnia",
+  wateringFrequency: "Podlewaj regularnie, nie dopuszczaj do przelania",
+  lightRequirement: "Rozproszone światło lub półcień",
+  temperature: "15-22°C",
+  image: "../assets/bluszcz.jpg",
+},
+{
+  id: 15,
+  name: "Fitonia",
+  scientificName: "Fittonia albivenis",
+  description:
+    "Niewielka roślina o kolorowych, kontrastowych żyłkach na liściach. Wymaga wysokiej wilgotności.",
+  difficulty: "Średnia",
+  wateringFrequency: "Utrzymuj stałą wilgotność podłoża, nie przesuszaj",
+  lightRequirement: "Rozproszone światło, unikać bezpośredniego słońca",
+  temperature: "18-24°C",
+  image: "../assets/fitonia.jpg",
+},
+{
+  id: 16,
+  name: "Dracena",
+  scientificName: "Dracaena marginata",
+  description:
+    "Roślina o wąskich, dekoracyjnych liściach. Odporna i łatwa w uprawie, dobrze znosi suche powietrze.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj umiarkowanie, gdy ziemia przeschnie",
+  lightRequirement: "Jasne miejsce, ale nie bezpośrednie słońce",
+  temperature: "18-26°C",
+  image: "../assets/dracena.jpg",
+},
+{
+  id: 17,
+  name: "Paprotka",
+  scientificName: "Nephrolepis exaltata",
+  description:
+    "Klasyczna roślina domowa o pierzastych liściach. Lubi wilgoć i nie znosi przesuszania.",
+  difficulty: "Średnia",
+  wateringFrequency: "Utrzymuj stale wilgotne podłoże, zraszaj liście",
+  lightRequirement: "Rozproszone światło lub półcień",
+  temperature: "16-24°C",
+  image: "../assets/paprotka.jpg",
+},
+{
+  id: 18,
+  name: "Skrzydłokwiat",
+  scientificName: "Spathiphyllum wallisii",
+  description:
+    "Roślina oczyszczająca powietrze, z eleganckimi białymi kwiatami. Idealna do cienia i półcienia.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj regularnie, ziemia powinna być lekko wilgotna",
+  lightRequirement: "Półcień lub jasne, rozproszone światło",
+  temperature: "18-26°C",
+  image: "../assets/skrzydlokwiat.jpg",
+}];

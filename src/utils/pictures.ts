@@ -12,6 +12,11 @@ import pileaImg from "../assets/pilea.jpg";
 import strelicjaImg from "../assets/strelicja.jpg";
 import zielistkaImg from "../assets/zielistka.jpg";
 import ficusbenjaminImg from "../assets/fikusbenjamin.jpg";
+import bluszczImg from "../assets/bluszcz.jpeg";
+import paprotkaImg from "../assets/paprotka.jpeg";
+import skrzydlokwiatImg from "../assets/skrzydlokwiat.jpeg";
+import dracenaImg from "../assets/dracena.jpeg";
+import fitoniaImg from "../assets/fitonia.jpg";
 
 const getPicture = (plantName: string): string => {
   switch(plantName) {
@@ -33,7 +38,7 @@ const getPicture = (plantName: string): string => {
       return pachiraImg;    
     case "Hoja":
       return hoyaImg;
-        case "Pieniążek":
+    case "Pieniążek":
       return pileaImg;
     case "Strelicja":
       return strelicjaImg;    
@@ -41,6 +46,16 @@ const getPicture = (plantName: string): string => {
       return zielistkaImg;
     case "Fikus Benjamina":
       return ficusbenjaminImg;
+    case "Skrzydłokwiat":
+      return skrzydlokwiatImg;
+    case "Dracena":
+      return dracenaImg;
+    case "Paprotka":
+      return paprotkaImg;    
+    case "Bluszcz":
+      return bluszczImg;
+    case "Fitonia":
+      return fitoniaImg;
     default:
       return epipremnumImg;
   }
