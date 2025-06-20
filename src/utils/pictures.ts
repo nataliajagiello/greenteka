@@ -1,4 +1,3 @@
-
 import epipremnumImg from "../assets/epipremnum.jpg";
 import monsteraImg from "../assets/monstera.jpg";
 import sansevieriaImg from "../assets/sansewieria.jpg";
@@ -17,6 +16,21 @@ import paprotkaImg from "../assets/paprotka.jpeg";
 import skrzydlokwiatImg from "../assets/skrzydlokwiat.jpeg";
 import dracenaImg from "../assets/dracena.jpeg";
 import fitoniaImg from "../assets/fitonia.jpg";
+import alokazjaImg from "../assets/alokazja.jpeg";
+import anturiumImg from "../assets/anturium.jpeg";
+import arekaImg from "../assets/areka.jpeg";
+import echinocactusImg from "../assets/echinocactus.jpeg";
+import eszeweriaImg from "../assets/eszeweria.jpeg";
+import fikusrobustaImg from "../assets/fikusrobusta.jpeg";
+import gruboszImg from "../assets/grubosz.jpeg";
+import marantaImg from "../assets/maranta.jpeg";
+import oliwkaImg from "../assets/oliwka.jpeg";
+import oplatwaImg from "../assets/oplatwa.jpeg";
+import opuncjaImg from "../assets/opuncja.jpeg";
+import syngoniumImg from "../assets/syngonium.jpeg";
+import szefleraImg from "../assets/szeflera.jpeg";
+import zamiokulkasImg from "../assets/zamiokulkas.jpeg";
+
 
 const getPicture = (plantName: string): string => {
   switch(plantName) {
@@ -56,6 +70,34 @@ const getPicture = (plantName: string): string => {
       return bluszczImg;
     case "Fitonia":
       return fitoniaImg;
+    case "Alokazja olbrzymia":
+      return alokazjaImg;
+    case "Anturium":
+      return anturiumImg;
+    case "Palma Areka":
+      return arekaImg;  
+    case "Echinokaktus Grusona":
+      return echinocactusImg;
+    case "Eszeweria":
+      return eszeweriaImg;
+    case "Fikus Robusta":
+      return fikusrobustaImg;
+    case "Grubosz":
+      return gruboszImg;
+    case "Maranta":
+      return marantaImg;
+    case "Oliwka":
+      return oliwkaImg;
+    case "Oplątwa":
+      return oplatwaImg;
+    case "Opuncja": 
+      return opuncjaImg;
+    case "Syngonium":
+      return syngoniumImg;
+    case "Szeflera":
+      return szefleraImg;
+    case "Zamiokulkas":
+      return zamiokulkasImg;
     default:
       return epipremnumImg;
   }
