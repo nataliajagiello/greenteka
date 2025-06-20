@@ -93,7 +93,7 @@ export const plants: Plant[] = [
   wateringFrequency: "Utrzymuj stale lekko wilgotne podłoże, nie zalewaj",
   lightRequirement: "Rozproszone światło, unikać bezpośredniego słońca",
   temperature: "18-25°C",
-  image: "../assets/kalatea.jpg",
+  image: "../assets/calathea.jpg",
 },
 {
   id: 8,
@@ -117,6 +117,42 @@ export const plants: Plant[] = [
   wateringFrequency: "Podlewaj oszczędnie, pozwól ziemi przeschnąć między podlewaniami",
   lightRequirement: "Jasne, rozproszone światło; znosi też półcień",
   temperature: "18-27°C",
-  image: "../assets/hoja.jpg",
+  image: "../assets/hoya.jpg",
+},
+{
+  id: 10,
+  name: "Pieniążek",
+  scientificName: "Pilea peperomioides",
+  description:
+    "Urocza roślina o okrągłych, błyszczących liściach. Łatwa w uprawie i szybko się rozmnaża. Symbol dobrobytu.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj umiarkowanie, gdy wierzchnia warstwa ziemi przeschnie",
+  lightRequirement: "Jasne miejsce z rozproszonym światłem",
+  temperature: "18-24°C",
+  image: "../assets/pilea.jpg",
+},
+{
+  id: 11,
+  name: "Strelicja",
+  scientificName: "Strelitzia nicolai",
+  description:
+    "Efektowna roślina o dużych liściach przypominających bananowca. Potrzebuje dużo światła i przestrzeni.",
+  difficulty: "Średnia",
+  wateringFrequency: "Regularnie, gdy wierzchnia warstwa ziemi przeschnie",
+  lightRequirement: "Dużo światła, najlepiej bezpośredniego",
+  temperature: "20-30°C",
+  image: "../assets/strelicja.jpg",
+},
+{
+  id: 12,
+  name: "Zielistka",
+  scientificName: "Chlorophytum comosum",
+  description:
+    "Łatwa i szybkorosnąca roślina doniczkowa, idealna dla początkujących. Dobrze oczyszcza powietrze.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj regularnie, utrzymując lekką wilgotność podłoża",
+  lightRequirement: "Jasne, rozproszone światło lub półcień",
+  temperature: "16-24°C",
+  image: "../assets/zielistka.jpg",
 }
 ];
