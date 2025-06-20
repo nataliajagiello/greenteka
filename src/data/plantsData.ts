@@ -154,5 +154,18 @@ export const plants: Plant[] = [
   lightRequirement: "Jasne, rozproszone światło lub półcień",
   temperature: "16-24°C",
   image: "../assets/zielistka.jpg",
+},
+{
+  id: 13,
+  name: "Fikus Benjamina",
+  scientificName: "Ficus benjamina",
+  description:
+    "Klasyczna roślina domowa o eleganckich, delikatnych liściach. Lubi stabilne warunki i jasne miejsce.",
+  difficulty: "Średnia",
+  wateringFrequency: "Podlewaj umiarkowanie, gdy wierzchnia warstwa ziemi przeschnie",
+  lightRequirement: "Jasne miejsce, najlepiej z rozproszonym światłem",
+  temperature: "18-25°C",
+  image: "../assets/ficusbenjamin.jpg",
 }
+
 ];

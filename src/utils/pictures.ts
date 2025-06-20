@@ -11,6 +11,7 @@ import hoyaImg from "../assets/hoya.jpg";
 import pileaImg from "../assets/pilea.jpg";
 import strelicjaImg from "../assets/strelicja.jpg";
 import zielistkaImg from "../assets/zielistka.jpg";
+import ficusbenjaminImg from "../assets/fikusbenjamin.jpg";
 
 const getPicture = (plantName: string): string => {
   switch(plantName) {
@@ -38,6 +39,8 @@ const getPicture = (plantName: string): string => {
       return strelicjaImg;    
     case "Zielistka":
       return zielistkaImg;
+    case "Fikus Benjamina":
+      return ficusbenjaminImg;
     default:
       return epipremnumImg;
   }
