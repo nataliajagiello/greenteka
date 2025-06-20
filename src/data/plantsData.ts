@@ -82,5 +82,41 @@ export const plants: Plant[] = [
   lightRequirement: "Dużo światła słonecznego",
   temperature: "20-30°C",
   image: "../assets/hibiskus.jpg",
+},
+{
+  id: 7,
+  name: "Kalatea",
+  scientificName: "Calathea",
+  description:
+    "Dekoracyjna roślina o ozdobnych liściach z unikalnymi wzorami. Ceni wysoką wilgotność i rozproszone światło.",
+  difficulty: "Średnia",
+  wateringFrequency: "Utrzymuj stale lekko wilgotne podłoże, nie zalewaj",
+  lightRequirement: "Rozproszone światło, unikać bezpośredniego słońca",
+  temperature: "18-25°C",
+  image: "../assets/kalatea.jpg",
+},
+{
+  id: 8,
+  name: "Pachira",
+  scientificName: "Pachira aquatica",
+  description:
+    "Drzewko szczęścia z plecionym pniem i błyszczącymi liśćmi. Łatwa w uprawie, świetnie nadaje się do wnętrz.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj umiarkowanie, gdy wierzchnia warstwa ziemi przeschnie",
+  lightRequirement: "Jasne miejsce, najlepiej z rozproszonym światłem",
+  temperature: "18-30°C",
+  image: "../assets/pachira.jpg",
+},
+{
+  id: 9,
+  name: "Hoja",
+  scientificName: "Hoya carnosa",
+  description:
+    "Pnącze o mięsistych liściach i pachnących kwiatach. Idealna do wiszących doniczek. Mało wymagająca.",
+  difficulty: "Łatwa",
+  wateringFrequency: "Podlewaj oszczędnie, pozwól ziemi przeschnąć między podlewaniami",
+  lightRequirement: "Jasne, rozproszone światło; znosi też półcień",
+  temperature: "18-27°C",
+  image: "../assets/hoja.jpg",
 }
 ];

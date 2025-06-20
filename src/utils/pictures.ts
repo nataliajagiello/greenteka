@@ -5,6 +5,9 @@ import sansevieriaImg from "../assets/sansewieria.jpg";
 import krotonImg from "../assets/kroton.jpg";
 import aloesImg from "../assets/aloes.jpg";
 import hibiskusImg from "../assets/hibiskus.jpg";
+import kalateaImg from "../assets/calathea.jpg";
+import pachiraImg from "../assets/pachira.jpg";
+import hoyaImg from "../assets/hoya.jpg";
 
 const getPicture = (plantName: string): string => {
   switch(plantName) {
@@ -20,6 +23,12 @@ const getPicture = (plantName: string): string => {
       return aloesImg;
     case "Hibiskus":
       return hibiskusImg;
+    case "Kalatea":
+      return kalateaImg;
+    case "Pachira":
+      return pachiraImg;    
+    case "Hoja":
+      return hoyaImg;
     default:
       return epipremnumImg;
   }
