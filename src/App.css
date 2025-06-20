@@ -40,3 +40,158 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Header */
+
+.headerContainer {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.decorativeLeaf {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.decorativeLeaf:nth-child(1) {
+  top: -16px;
+  left: -32px;
+  color: #bbf7d0;
+}
+
+.decorativeLeaf:nth-child(2) {
+  top: -8px;
+  right: -24px;
+  color: #a7f3d0;
+  opacity: 0.4;
+}
+
+.decorativeLeaf:nth-child(3) {
+  bottom: -12px;
+  left: -16px;
+  color: #86efac;
+  opacity: 0.5;
+}
+
+.headerTitle {
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: 300;
+  color: #292524;
+  letter-spacing: clamp(1px, 0.5vw, 4px);
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
+  position: relative;
+  z-index: 10;
+  flex-wrap: nowrap;
+}
+
+.descriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
+  margin-top: 16px;
+  flex-wrap: nowrap;
+}
+
+.descriptionLine {
+  height: 1px;
+  width: clamp(32px, 8vw, 64px);
+  background: linear-gradient(to right, transparent, #86efac, transparent);
+}
+
+.descriptionText {
+  color: #57534e;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1vw, 8px);
+  font-size: clamp(12px, 2.5vw, 16px);
+  text-align: center;
+}
+
+.additionalDescription {
+  font-size: clamp(12px, 2vw, 14px);
+  color: #78716c;
+  margin-top: 12px;
+  max-width: min(500px, 90vw);
+  margin: 12px auto 0;
+  line-height: 1.6;
+  padding: 0 8px;
+}
+
+.iconSprout {
+  color: #059669;
+  flex-shrink: 0;
+}
+
+.iconTreePine {
+  color: #047857;
+  flex-shrink: 0;
+}
+
+.iconFlower {
+  color: #f472b6;
+  flex-shrink: 0;
+}
+
+.iconFlower2 {
+  color: #a855f7;
+  flex-shrink: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .headerTitle {
+    font-size: 28px;
+    letter-spacing: 2px;
+    gap: 8px;
+  }
+
+  .headerContainer {
+    margin-top: 5px;
+  }
+
+  .decorativeLeaf {
+    display: none;
+  }
+
+  .descriptionLine {
+    width: 32px;
+  }
+
+  .descriptionText {
+    font-size: 13px;
+  }
+
+  .additionalDescription {
+    font-size: 12px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerTitle {
+    font-size: 24px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+  }
+
+  .descriptionContainer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .descriptionLine {
+    display: none;
+  }
+}
+
