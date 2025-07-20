@@ -1,3 +1,4 @@
+import "./Header.css"
 import { Flower, Flower2, Leaf, Sprout, TreePine } from "lucide-react"
 
 const Header: React.FC = () => {

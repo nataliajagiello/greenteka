@@ -5,15 +5,33 @@ import { Droplets, Sun, Thermometer } from "lucide-react";
 interface PlantCardProps {
   plant: Plant;
   picture:string;
+  searchTerm?: string
 }
 
-const PlantCard: React.FC<PlantCardProps> = ({ plant, picture }) => {
+const PlantCard: React.FC<PlantCardProps> = ({ plant, picture, searchTerm }) => {
+
+ const highlightText = (text: string, term: string) => {
+    if (!term.trim()) return text
+
+    const regex = new RegExp(`(${term})`, "gi")
+    const parts = text.split(regex)
+
+    return parts.map((part, index) =>
+      regex.test(part) ? (
+        <mark key={index} className="highlight">
+          {part}
+        </mark>
+      ) : (
+        part
+      ),
+    )
+  }
 
   return (
     <div className="plant-card" style={{ border: "1px solid #ddd", padding: "1rem", margin: "1rem", borderRadius: "8px", maxWidth: "300px" }}>
         <img src={picture} alt={plant.name} style={{ width: "100%", height: "auto", borderRadius: "8px" }} />
-      <p style={{textAlign:'left', fontWeight:'bold'}}>{plant.name}</p>
-      <p style={{textAlign:'left'}}><em>{plant.scientificName}</em></p>
+      <p style={{textAlign:'left', fontWeight:'bold'}}>{highlightText(plant.name, searchTerm || "")}</p>
+      <p style={{textAlign:'left'}}><em>{highlightText(plant.scientificName, searchTerm || "")}</em></p>
       <hr/>
       <p style={{textAlign:'left'}}>{plant.description}</p>
        {/* Informacje pielęgnacyjne */}

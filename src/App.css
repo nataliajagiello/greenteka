@@ -1,50 +1,53 @@
-#root {
-  max-width: 1280px;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Główny kontener aplikacji */
+.full-width-app {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kontener dla kart roślin */
+.full-width-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+/* Wyświetlanie liczby wyników */
+.results-display {
+  width: 100%;
   text-align: center;
+  padding: 1rem 0;
+  margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.results-text {
+  color: #16a34a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
-/* Header */
-
+/* Header Styles */
 .headerContainer {
+  width: 100%;
   text-align: center;
   margin-top: 10px;
   position: relative;
@@ -148,20 +151,25 @@
   flex-shrink: 0;
 }
 
-/* Media Queries */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .headerTitle {
-    font-size: 28px;
-    letter-spacing: 2px;
-    gap: 8px;
+  .full-width-container {
+    gap: 1rem;
+    padding: 0 0.5rem 1rem 0.5rem;
   }
 
   .headerContainer {
-    margin-top: 5px;
+    padding: 0 1rem;
   }
 
   .decorativeLeaf {
     display: none;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+    letter-spacing: 2px;
+    gap: 8px;
   }
 
   .descriptionLine {
@@ -174,11 +182,28 @@
 
   .additionalDescription {
     font-size: 12px;
-    padding: 0 16px;
+    padding: 0 1rem;
+  }
+
+  .results-text {
+    font-size: 0.8125rem;
   }
 }
 
 @media (max-width: 480px) {
+  .full-width-container {
+    gap: 0.75rem;
+    padding: 0 0.25rem 1rem 0.25rem;
+  }
+
+  .headerContainer {
+    padding: 0 0.5rem;
+  }
+
+  .descriptionLine {
+    display: none;
+  }
+
   .headerTitle {
     font-size: 24px;
     letter-spacing: 1px;
@@ -190,8 +215,11 @@
     gap: 8px;
   }
 
-  .descriptionLine {
-    display: none;
+  .additionalDescription {
+    padding: 0 0.75rem;
+  }
+
+  .results-text {
+    font-size: 0.75rem;
   }
 }
-

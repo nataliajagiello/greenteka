@@ -1,0 +1,140 @@
+.search-container {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 1rem 1rem; 
+}
+
+/* Search Input Wrapper */
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-input-container:hover {
+  transform: translateY(-1px);
+}
+
+.search-input-container:focus-within {
+  transform: translateY(-1px);
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4ade80;
+  height: 1.25rem;
+  width: 1.25rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
+  border: 2px solid #dcfce7;
+  border-radius: 50px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.search-input:focus {
+  border-color: #86efac;
+  box-shadow: 0 0 0 3px rgba(134, 239, 172, 0.1);
+}
+
+/* Results Counter - zawsze obecny */
+.search-results-counter {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Ukryty stan */
+.search-results-counter.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.results-text {
+  color: #16a34a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 0.75rem 1rem 0.75rem 1rem; /* Zmniejszony padding */
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+    padding: 0.625rem 0.75rem 0.625rem 2.5rem;
+  }
+
+  .search-icon {
+    left: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .results-text {
+    font-size: 0.8125rem;
+  }
+
+  .search-results-counter {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem; /* Zmniejszony padding */
+  }
+
+  .search-input {
+    font-size: 0.8125rem;
+    padding: 0.5625rem 0.625rem 0.5625rem 2.25rem;
+  }
+
+  .search-icon {
+    left: 0.625rem;
+    height: 0.875rem;
+    width: 0.875rem;
+  }
+
+  .search-input-container:hover {
+    transform: none;
+  }
+
+  .results-text {
+    font-size: 0.75rem;
+  }
+
+  .search-results-counter {
+    margin-top: 0.5rem;
+  }
+}
